@@ -1,22 +1,20 @@
 # Decision Theory
-    TODO: Put Image here!
-.
+<!-- Click Ctrl+P and execute "ext install amoosbr.markdown-imsize" to support image size -->
+![Decision Theory](figures/decisionTheory.png =500x)
 
-    TODO: Think about this slide again --> Diego
+There are two perspectives on the decision theory in this course. The __descriptive decision theory__ describes the way how the decisions were made (already done). 
 
-There are two perspectivs on the decision theory. The __descriptive decision theory__ describes the thoughts over the whole situation and the decision making. 
-
-The __normative decision theory__ contains thoughs like how are people making decisions and what could be the outcome. What could be the possibilities or the options? 
+The __normative decision theory__ describes how the decisions should be made. What options are available, what should be respected? 
 
 ## Decriptive Decision Theory
 - Intuitive and rational decisions
 - Mental models
 
-__Rational decisions__ are __targeted throughout__ and __goal oriented__. They follow a __systematic procedure__ and __uses a clear methodological rules__ (which is understandable from not involved people). These decisions are __not from gut feeling__ and are __not intuitiv__. 
+__Rational decisions__ are __targeted throughout__ and __goal oriented, based on objectiv informations__. They follow a __systematic procedure__ and __uses a clear methodological rules__ (which is understandable from not involved people). These decisions are __not from gut feeling__ and are __not intuitiv__. 
 
 The fundamental of a __intuitive decision__ is the __knowledge__ you have and __the experience of everything__ you ever experienced or of happenings and knowledge you earned from other people. Decisions made out of __gut feeling__.
 
-A __mental model__ is a __simplified mental description__ of the subjective awereness of the outside world with the purpose of 
+A __mental model__ is a __simplified mental description of the experienced world__ with the purpose of 
 - __handling the large quantity of information__
 - in order to be able to __make decisions quickly__
 
@@ -29,7 +27,7 @@ Mental models are __made of__
 - __By experience__ in the past
 - and they are adapted to specific situations immediately
 
-.
+</br>
  
     Learning is nothing else than adapting mental models.
     If you are not able to adapt mental models, you are not able to make decisions quickly.
