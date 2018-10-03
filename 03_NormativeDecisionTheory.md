@@ -44,3 +44,60 @@ In lexiocographical order you put priorities to some criterias (e.g. first prior
 
 ## Utility function (Nutzwertanalyse)
 Weigthns the different parameters (e.g. the factor for profit is higher than for revenue). Afterwards the variant with the biggest utility is the one to be choosen.
+
+## Decission rules
+
+### Maximin rule
+The alternative action with the maximum minimum is chosen.
+
+__Intention:__ Decision rule with an extreme level of risk aversion, as only the poorest possible result is reflected in the evaluation.  
+__Criticism:__ Not in touch with reality and only one single value of an alternative is taken into consideration.
+
+### Maximax rule
+The alternative action with the maximum maximum is chosen.
+
+__Intention:__ Extremely venturesome (optimistic) decision rule, as only the best possible result is reflected in the evaluation.
+__Criticism:__ Extremely out of touch with reality and equally only one single value of an alternative is taken into consideration.
+
+### Hurwicz rule
+Combination of the maximin and maximax by the introduction of an optimisation parameter lambda (0 <= lambda <= 1).
+
+In optimistic decission making lambda should be choosen high, otherwise it should be low.
+
+![hurwicz formula](figures/hurwicz.png)
+
+__Intention:__ Decision rule for decision makers who are neither absolutely optimistic nor absolutely pessimistic.
+__Criticism:__ In many cases out of touch with reality and only two values of each alternative are taken into consideration.
+
+### Savage-Niehans rule
+Rule of the lowest regret. 
+
+The rule attempts to minimise the maximum possible regret. Create a 
+regret matrix matrix in which the maxima determine the environmental conditions and then the maximum possible difference for this value is calculated per course of cation. The maximum possible regret is then the row maximum.
+
+![Example](figures/savage-niehansRule.png)
+You do following for each column: Take the maximum value and calculate the possible lost value for each cell. The row (alternative) with the minimum possible lost value (the minimum regret) wins.
+
+__Criticism:__ With regard to the regret matrix, the decision is based on the principles of the minimax criterion. For this reason, not all information is used even in the case of this criterion and a pessimistic sentiment is ultimately expressed. A particular point of criticism relates to the circumstance that the ranking between two alternatives can change after the addition of another alternative.
+
+### Laplace criterion
+The average of all environmental conditions is formed for every alternative. The winner is the alternative with the highest average over all conditions. 
+
+__Criticism:__ 
+It  can be said that probably most people would have chosen the alternative a 3, and thus comparing the Laplace criterion with the other rules is more realistic.
+
+## Logical procedure
+Subjective probabilities for environmental conditions are formed and the decision situation is converted in this way to a decision involving risk. 
+
+![Decision involving risk](figures/logicalDecisionMaking.png)
+
+### mu criterion/Bayes rule
+
+__Expected value:__ The expected value is the value which results as a mean if the situation were to be endlessly repeated.
+
+![Bayes rule](figures/bayesRule.png)
+
+__risk aversion:__ The decision maker prefers a lower expected value if this provides more security.  
+__risk neutral:__ The decision maker is indifferent to the fluctuation of results, he only orientates himself on the expected value.  
+__venturesome:__ The decision maker avoids a higher expected value in favour of a wide range of varying results.
+

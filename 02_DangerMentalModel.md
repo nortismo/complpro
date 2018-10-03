@@ -6,15 +6,17 @@ By dealing with models, the human tends to believe the most complex model is cor
 
 Prejustice is also a big issue (D.L. Rosehans experiment).
 
-## Causality vs. correlation
+## Causality vs. correlation (MEP Question)
 
 __Correlation__  
-Two factors are correlated if a mathematical dependency between them can be statistically proven.
+Two factors are correlated if a mathematical dependency between them can be statistically proven.\
+*Can be proven statistically*
 
 __Causality__  
 There is a casual relationship between two factors if a cause-effect relationship exists between the two.
 
--> Correlation can be proven, strictly speaking causality cannot.
+-> Correlation can be proven, strictly speaking causality cannot.\
+*Can not be proven*
 
 ## Problems of mental models
 
