@@ -101,3 +101,26 @@ __risk aversion:__ The decision maker prefers a lower expected value if this pro
 __risk neutral:__ The decision maker is indifferent to the fluctuation of results, he only orientates himself on the expected value.  
 __venturesome:__ The decision maker avoids a higher expected value in favour of a wide range of varying results.
 
+
+## Decission Tree
+A decision tree always consists of one root node and any number of inner nodes as well as at least two leaf nodes. Each node represents a logical rule and each leaf node an answer to the decision problem.
+
+    Decisions are drawn in square fields. Events are drawn in circles. You can also note the probability of the alternative to the related leaf or the path.
+
+## Bernoulli Principle
+The basic idea is to calculate the expected value not from the results values but rather from the utility values and to then regard these as preferential values.  
+E.g. if you get a million CHF, you can do a lot of things! But if you earn another million (=2 MIO), you can not do the double of these things. 
+
+The Bernoulli survey can be used to determine the utility function, which
+results in a risk-utility function (RNF) or a utility function. The blue is risk neutral, the green is risky, the red is risk averse. 
+
+![Utility Function](figures/utilityFunction.png)
+
+Procedure
+
+If the risk utility function is given, a utility or decission marix can be formed.
+
+![Utility Matrix](figures/utilitymatrix.png)
+
+If a risk utility function is given there's only __one rational decission__.
+
