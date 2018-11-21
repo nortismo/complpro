@@ -45,3 +45,8 @@ Stocks:
 - Identify dependent variables & potentially conflicting goals
 - Improve quality of discussion by precise presentation of the subject of matter.
 
+### Rules for good CLDs
+- Variable name : Rule 1-3
+- Causal relations: Rule 4 - 9
+- Loops: Rule 10 - 11
+- Model: Rule 12
