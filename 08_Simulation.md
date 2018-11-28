@@ -65,3 +65,41 @@ In a queuing system, __jobs__ are processed by a __server__. Under the (realisti
 - Requires significant (software) development time
 - Construction of a simulation model is relatively prone to error
 - Sound interpretation of results is challenging
+
+![Overview DES](figures/overviewDES.png)
+
+## DES Key Elements
+__Items (or entities):__  
+Items that flow through the system.  
+Examples: Patients, Spare parts, Production orders, Cars, et cetera.  
+*Items usually have attributes*
+
+__Simulation clock:__  
+virtual time within the simulation model
+
+__System state:__  
+The state Z(t) gives a full description of the system at time t.
+
+__Future Event List:__  
+Dynamic list that contains 0 or more (time, event) pairs.
+
+__Event:__  
+Each event has an effect at the time of occurrence. The effect consists of a change to the system state and/or a change to the Future Event List
+
+## Flow- and Event Diagrams
+- Flow diagrams show how items can move through the system.
+
+- Event diagrams describe the impact of a given event on:
+    - Attribute values of active items
+    - System state
+    - Future Event List.
+
+
+### Building Blocks
+![Building Blocks 1](figures/flowDiagramBuildingblocks1.png)
+
+![Building Blocks 2](figures/flowDiagramBuildingblocks2.png)
+
+
+![Building Blocks 3](figures/flowDiagramBuildingblocks1.png)
+
