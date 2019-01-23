@@ -424,5 +424,69 @@ that follow a certain given distribution $F()$.
 	\item Calculate $y = F^{-1}(x)$
 \end{enumerate}
 
+\paragraph{Exponential distribution}
+\begin{equation}
+F(x) = 1 - e^{-\lambda x}
+\end{equation}
+\begin{equation}
+F(x)^{-1} = -\frac{1}{\lambda}\cdot ln(1-x)
+\end{equation}
+\begin{equation}
+\lambda = \frac{1}{E(x)}
+\end{equation}
+
+\subsection{Independent simulation run method}
+In this method, multiple simulation runs are carried out, each with its own
+random seed. Each simulation run yields one sample mean Xi. By design,
+all Xi are uncorrelated. This means that we can apply basis statistics.
+
+\subsubsection{Warm-Up period}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/WarmUpPeriod.png}
+	\caption{Warmup Period}
+\end{figure}
+
+Most of the times, we are interested in the long-run system behavior.
+The simulation run however starts with some system state which might
+not be realistic at all (think e.g. idle queuing systems).\\
+\\
+Consequently, we must remove this warm-up phase from the data
+before starting our analysis. We normally have to throw away between 1-2
+batches.
+
+\subsubsection{Result Analysis: Batch-Means Method}
+After the removal of the warm-up period, simulation time is divided into n
+equal intervals. For each interval the mean value for the desired
+performance measure is computed.
+Under the assumption that the batches are independent (which is the
+case if each batch is long enough), the confidence interval for the
+estimated parameter can be computed from the empirical variance of the
+batch means.
+
+Sample Mean:
+\begin{equation}
+\hat{\Theta} = \frac{1}{n}\sum_{i=1}^n \hat{\Theta_i}
+\end{equation}
+
+Sample Variance:
+\begin{equation}
+S^2 = \frac{1}{n-1}\sum_{i=1}^n (\hat{\Theta_i} - \hat{\Theta})^2
+\end{equation}
+
+Confidence Interval:
+\begin{equation}
+[\hat{\Theta}-z_{\alpha/2}\cdot \sqrt{S^2/n};
+\hat{\Theta}+z_{\alpha/2}\cdot \sqrt{S^2/n}]
+\end{equation}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{figures/ConfidenceIntervalValues.png}
+	\caption{Common values for $z_{\alpha/2}$}
+\end{figure}
+
+
+
 
 \subimport{.}{06_SimulationOptimization}
